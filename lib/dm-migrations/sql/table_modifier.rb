@@ -11,7 +11,7 @@ module SQL
 
       @statements = []
 
-      self.instance_eval &block
+      self.instance_eval(&block)
     end
 
     def add_column(name, type, opts = {})

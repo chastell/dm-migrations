@@ -14,7 +14,7 @@ module SQL
 
       @columns = []
 
-      self.instance_eval &block
+      self.instance_eval(&block)
     end
 
     def quoted_table_name
